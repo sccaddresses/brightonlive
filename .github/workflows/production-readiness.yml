@@ -1,0 +1,36 @@
+name: BrightonLive Production Readiness
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      COMPANIES_HOUSE_API_KEY: ${{ secrets.COMPANIES_HOUSE_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - run: python run.py run --config config/brighton.yaml
+      - run: python scripts/validate_outputs.py
+      - name: Strict coverage gate
+        run: python scripts/release_gate.py --strict
+      - run: python scripts/validate_repo.py
+      - run: python scripts/generate_integrity_manifest.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: brightonlive-production-ready
+          path: |
+            public_html/
+            exports/brighton/
+            MANIFEST.json
+            SHA256SUMS.txt

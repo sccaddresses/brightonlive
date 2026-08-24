@@ -1,0 +1,946 @@
+{
+  "generated_at": "2026-08-23T18:03:24.458126+00:00",
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": ".editorconfig",
+      "bytes": 139,
+      "sha256": "0236baaa876eef2fbe3d4a9b01aac87d148b925fac3f58e1bc0cc9819ed88dab"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 400,
+      "sha256": "29e6ba51e3689647b8c500739c6453bbbe5cd16f5d253cc8a1d896815cf9027b"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "bytes": 16,
+      "sha256": "58dbb988e6a9faa479a35949c2454fb3fe9eaaa3a8d923d34b431643fd289504"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "bytes": 260,
+      "sha256": "1df1ce6ae55e6f7f34531a0a7af8440f9df86a6cac9c7625ac24adfe259cfae0"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 1125,
+      "sha256": "104e8b0f191571523ecf6245e838e636b1d99173f09ed76ef4d8ad4f236b5c62"
+    },
+    {
+      "path": ".github/workflows/deploy-hostinger.yml",
+      "bytes": 2193,
+      "sha256": "69a96dbb94ae0bb3580f6263506f461aa4870d53c23aa975245abf6ca91fd1bf"
+    },
+    {
+      "path": ".github/workflows/production-readiness.yml",
+      "bytes": 983,
+      "sha256": "66aec7f5f7378103fcac9fdc54942218e0565153fc4d7865938bf65207b72334"
+    },
+    {
+      "path": ".github/workflows/weekly-data.yml",
+      "bytes": 2211,
+      "sha256": "599eb48658bbbfc4b3061c15d7fc8774920e75cbff12a15f46c87e00bd67aa14"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 341,
+      "sha256": "cadf5c782b07f737484017fd101a1573b327a7efb94a4b1d83081d67136d0a42"
+    },
+    {
+      "path": ".pytest_cache/.gitignore",
+      "bytes": 37,
+      "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+    },
+    {
+      "path": ".pytest_cache/CACHEDIR.TAG",
+      "bytes": 191,
+      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    },
+    {
+      "path": ".pytest_cache/README.md",
+      "bytes": 302,
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    },
+    {
+      "path": ".pytest_cache/v/cache/lastfailed",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": ".pytest_cache/v/cache/nodeids",
+      "bytes": 1189,
+      "sha256": "de2f6ce6884c4e922942d9351e0d594e6a1806e9283128bee35ea9c0a22abcb7"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 405,
+      "sha256": "354ac0e845ac9185417c1d9c876f0ceabc8ea9127c1a2006b7fb947335fbff96"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 478,
+      "sha256": "870e17e70a27b500be0774f013eb89c18d7abe29d2c0dcd36efadade4e2644f0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 827,
+      "sha256": "5dc30fb135316c715200b13b9d7b6ac9f24e1e1f9690b06e6b030523552b4005"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 399,
+      "sha256": "eae14951b90185adbce2286cba037bf18a59e5f28eef2caf519d08ad6b82f1bf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6199,
+      "sha256": "e546e0e1c30c24012fc4db51f3905ff1366c51d9059e970c34ffd7af61eec7ad"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 389,
+      "sha256": "7f76d2169f0ed5f853a6926eadd0e2a6846e4c53537aef594cbee0a4b7a29c79"
+    },
+    {
+      "path": "UPLOAD-TO-GITHUB.md",
+      "bytes": 842,
+      "sha256": "a971a532acbfc2d8af451b1d096b8d043db3c8550bf0a43c1c7af6492f3617c0"
+    },
+    {
+      "path": "config/brighton.yaml",
+      "bytes": 2083,
+      "sha256": "12b55cd6a11d894f34e6dc0600cbc81224196697da1a82a8dfd6d2d7c1824754"
+    },
+    {
+      "path": "config/directory-sources.yaml",
+      "bytes": 2448,
+      "sha256": "652f0fc3df0d19539b007cc982a7d462f63f33605c6c33f720b2aa4100215003"
+    },
+    {
+      "path": "config/event-sources.yaml",
+      "bytes": 3186,
+      "sha256": "e7e243d3ce1fd6afc6a8e64b9c5623f3645f7e22307e6bd14775926f08b3abcf"
+    },
+    {
+      "path": "config/taxonomy.yaml",
+      "bytes": 2161,
+      "sha256": "067e7548937911a3aa28bfb1164b285d620aea433cb5d4875164e66de028a62a"
+    },
+    {
+      "path": "data/cache/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/fixtures/events.csv",
+      "bytes": 670,
+      "sha256": "fcc6452a2573bdfb7d4e6cfe57e59a3c5a7f31496f3f3163a664c0f2f278168e"
+    },
+    {
+      "path": "data/fixtures/listings.csv",
+      "bytes": 648,
+      "sha256": "5547b2f68fda801d3058c5035371780f2c104f57a78529070e23c4ab55318b81"
+    },
+    {
+      "path": "data/manual/events.csv",
+      "bytes": 133,
+      "sha256": "f32de5005e2ba2b34ceb2d8f63173fb144c9d4490d717e47ac4a36d25a34b48e"
+    },
+    {
+      "path": "data/manual/listings.csv",
+      "bytes": 157,
+      "sha256": "9e6db01e51314828b484e730dc3ca517550263586b5d06baa4645f81e3343415"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1953,
+      "sha256": "47de9f553ea74ecb57b41dc31d5134fcabeae27208b4975b1148a66d299f1dbd"
+    },
+    {
+      "path": "docs/BRANDING.md",
+      "bytes": 501,
+      "sha256": "39f93e151acf43854e9bafd4988744d336a7337170d09f8f5c48a58687e1f089"
+    },
+    {
+      "path": "docs/BRIGHTON-SOURCE-REGISTRY.md",
+      "bytes": 1177,
+      "sha256": "46756e4a4b0f316deebf90cb5a7ecdd853000b18c87b0704485b94ffde197f38"
+    },
+    {
+      "path": "docs/CLIENT-PRESENTATION.md",
+      "bytes": 831,
+      "sha256": "a5d35fdb0983f1f4f966a9c56e1ab82285007936505d8d4fbd6409d23a0cfd18"
+    },
+    {
+      "path": "docs/DATA-CONTRACTS.md",
+      "bytes": 699,
+      "sha256": "440560e395af2241c611035fc690d8492d2e2d82c47c34ad28361765a3dd5d26"
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "bytes": 896,
+      "sha256": "0bcf55e211a760df896553de742998f50673f6a4cd87b463eaf0aeec106b46a4"
+    },
+    {
+      "path": "docs/PRIVACY.md",
+      "bytes": 558,
+      "sha256": "d73392705c567bc58b9fd5b4f1c3469e01d1d3b2f297ca40bb82f3de6a292740"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "bytes": 969,
+      "sha256": "759180464dc8fc53e50fd6249fa8be3ec3423fefce5569eb529fbe05f82ffa99"
+    },
+    {
+      "path": "docs/PUBLICATION-GATES.md",
+      "bytes": 1405,
+      "sha256": "6e4f073737a86943315643821859ac232dd895f33128215f19caeb4d6bf41cc1"
+    },
+    {
+      "path": "docs/SECRETS.md",
+      "bytes": 540,
+      "sha256": "0b6652151e8566c1bfc75a640d2cf4323b5c8d19b0f161e40498fb43195eb61a"
+    },
+    {
+      "path": "docs/SOURCE-POLICY.md",
+      "bytes": 612,
+      "sha256": "fccef01c54111ca02be82dd0646e20e611747d5deda895e699a6c914a1b8151b"
+    },
+    {
+      "path": "exports/brighton/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ops/INCIDENT-RUNBOOK.md",
+      "bytes": 566,
+      "sha256": "ddc34cfc940b85ce36928a9cbb3f8364f10bf8514e53408e333a3f50611d637d"
+    },
+    {
+      "path": "ops/WEEKLY-RUNBOOK.md",
+      "bytes": 439,
+      "sha256": "406d1b60fd39660481266585bc5b40443bf7d8b27b6212f6712ee73b41ec3078"
+    },
+    {
+      "path": "public_html/.htaccess",
+      "bytes": 713,
+      "sha256": "9d095cb3ca24585bee6cd4559532fe894886b839214a6e772f75d56414b6eb49"
+    },
+    {
+      "path": "public_html/404.html",
+      "bytes": 4856,
+      "sha256": "9e7dabf0f5e5c5b90fba907808598f8cdb00ccfa4b1539798fb03645108591b2"
+    },
+    {
+      "path": "public_html/CREDITS.txt",
+      "bytes": 1133,
+      "sha256": "b8046961ea689a2c06a62e35d36d364a6dee6f8446ce583b35ab8ff23ec62d54"
+    },
+    {
+      "path": "public_html/assets/brand/apple-touch-icon.png",
+      "bytes": 1411,
+      "sha256": "bc8b6654b220ff7d2bda9d0f21532c049f7b1946d728abc9879a68d046914354"
+    },
+    {
+      "path": "public_html/assets/brand/brightonlive-logo.svg",
+      "bytes": 1342,
+      "sha256": "ffacff3bb36517ab2352c47c619dd4a44a67f5539ee649e3fedf1f52ca1cce6b"
+    },
+    {
+      "path": "public_html/assets/brand/favicon-16.png",
+      "bytes": 221,
+      "sha256": "7d333de5f190eb6466061432e546e40a0fd4c2d98cfd4e3b732b14f7b1776fdb"
+    },
+    {
+      "path": "public_html/assets/brand/favicon-32.png",
+      "bytes": 342,
+      "sha256": "78ecdc9ae0fa3d137ec0f73fdf00d26942fad1b489d78ada62e11da0935087a9"
+    },
+    {
+      "path": "public_html/assets/brand/favicon.svg",
+      "bytes": 527,
+      "sha256": "08e00904fcf1ea9d3e5c74cd555efcfc505c2052dab27ac634f59ed00582d206"
+    },
+    {
+      "path": "public_html/assets/brand/google-business-logo-720.png",
+      "bytes": 6840,
+      "sha256": "6493d8b0d1431c3463e4bcc89baecc25382c65dd20addfc54f99c6ced3d64161"
+    },
+    {
+      "path": "public_html/assets/brand/header-1.png",
+      "bytes": 13845,
+      "sha256": "02cac7f7b79cd4d0c8aeec0bf1146e7ae1e25df3e0ccb9ef88abe633398d472a"
+    },
+    {
+      "path": "public_html/assets/brand/og-brightonlive-1200x630.jpg",
+      "bytes": 165066,
+      "sha256": "e0e2879f26c4bf575694a150ecf8e6c77c728b7dbac946689ee48a24e9c3de3f"
+    },
+    {
+      "path": "public_html/assets/brand/social-launch-1080x1350.jpg",
+      "bytes": 305621,
+      "sha256": "224c386498351903e2e74ba7a8c824ed494b49c3b51b98d79c81537cf20d1bc0"
+    },
+    {
+      "path": "public_html/assets/brand/social-profile-1080.png",
+      "bytes": 11267,
+      "sha256": "4434fa247686fdaf20685d5c457941167b4de2a2f5909d39a5b913e0f463e93e"
+    },
+    {
+      "path": "public_html/assets/css/intro.css",
+      "bytes": 6608,
+      "sha256": "b994aa3128d64d61b8fb25e80533169f91fdeb4729aa44db82b3c22af62b1144"
+    },
+    {
+      "path": "public_html/assets/css/site.css",
+      "bytes": 16947,
+      "sha256": "0245478594c9ea773499bc0b53814473d049992cbaf4a08372dfeb01b2fa9a55"
+    },
+    {
+      "path": "public_html/assets/data/asset-provenance.v1.json",
+      "bytes": 2048,
+      "sha256": "c6fd2d82153bc40697a29fcfb5d9bea594463aaef6e285f51e532741e5933af6"
+    },
+    {
+      "path": "public_html/assets/data/directory-manifest.v1.json",
+      "bytes": 78,
+      "sha256": "9728efc3a1c9fd6944adaf379b625ca96a941f6557eb3058a897ee6cad8879cd"
+    },
+    {
+      "path": "public_html/assets/data/directory.v1.geojson",
+      "bytes": 52,
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "public_html/assets/data/directory.v1.json",
+      "bytes": 38,
+      "sha256": "6c51a9ceb3b82e80444103af2406be56c05e937c34402f0fd7ba4238d8b602c2"
+    },
+    {
+      "path": "public_html/assets/data/events-manifest.v1.json",
+      "bytes": 78,
+      "sha256": "9728efc3a1c9fd6944adaf379b625ca96a941f6557eb3058a897ee6cad8879cd"
+    },
+    {
+      "path": "public_html/assets/data/events.v1.geojson",
+      "bytes": 52,
+      "sha256": "b3049ad7a1062091e169bd352424d59721a26b8b6229942aef26d11b0c6a96e1"
+    },
+    {
+      "path": "public_html/assets/data/events.v1.json",
+      "bytes": 38,
+      "sha256": "6c51a9ceb3b82e80444103af2406be56c05e937c34402f0fd7ba4238d8b602c2"
+    },
+    {
+      "path": "public_html/assets/data/reference-places.v1.json",
+      "bytes": 2039,
+      "sha256": "5ce9fb612aa4a32f6e6a28099f5b7646e8f853d585ef4d2ec4bd10f14785d13d"
+    },
+    {
+      "path": "public_html/assets/images/brighton-i360-seafront-1600.webp",
+      "bytes": 184786,
+      "sha256": "b5b41c66d5c1424b2d409487b7910685e1659c527d2e964311a388424c22edce"
+    },
+    {
+      "path": "public_html/assets/images/brighton-pavilion-line.svg",
+      "bytes": 1133,
+      "sha256": "a40ff216fb546ce50e9c3e5a49b216b3be580f41195095065ddb7acf85874bda"
+    },
+    {
+      "path": "public_html/assets/images/brighton-royal-pavilion-1600.webp",
+      "bytes": 149708,
+      "sha256": "2c56c6bc0043e8bab044417733fcfa053d50c3cd7c5646905bd67729f453bf2e"
+    },
+    {
+      "path": "public_html/assets/images/brighton-seafront-west-1600.webp",
+      "bytes": 191698,
+      "sha256": "8d96c3558f3a9a8146c79cefbe2e8e8cc7e39320f17087b815b763fa08a4b8bb"
+    },
+    {
+      "path": "public_html/assets/images/card-city-900.webp",
+      "bytes": 83130,
+      "sha256": "7bc9ad86d1fa0fac8f0d9b63127dd17400c825e68d03d9429b8b91b5bd746dc3"
+    },
+    {
+      "path": "public_html/assets/images/card-pavilion-900.webp",
+      "bytes": 81958,
+      "sha256": "995c8a80cf5688bc059c824c1c3060c2b63b9c97068b78e2681132a81e12ea5d"
+    },
+    {
+      "path": "public_html/assets/images/card-seafront-900.webp",
+      "bytes": 92578,
+      "sha256": "f14a0c866b632768f88ed9c31d7522f6bfe06293a3a4c91657312fac26e6d992"
+    },
+    {
+      "path": "public_html/assets/images/og-base.webp",
+      "bytes": 135972,
+      "sha256": "6dbf800cbca771326be19eadc9b26925a013aef4e64d90818d50ac2ead060c25"
+    },
+    {
+      "path": "public_html/assets/images/social-base.webp",
+      "bytes": 259366,
+      "sha256": "1e7b4f67f797788601bf70a2fbfebae8d55bf424637713a443fe322b8262266b"
+    },
+    {
+      "path": "public_html/assets/intro/brighton-pavilion-plate.webp",
+      "bytes": 154952,
+      "sha256": "083b4d7aee24b3b74f0a75245f980de0b5356cac3cd93126e320fc724761505e"
+    },
+    {
+      "path": "public_html/assets/js/data-feeds.js",
+      "bytes": 3998,
+      "sha256": "faebd9af1e16d768f502c7a27bb34d1280c23424f5aee66cb823992664e75458"
+    },
+    {
+      "path": "public_html/assets/js/intro.js",
+      "bytes": 710,
+      "sha256": "c43e75cfd7a9bc6d3dca84bc98c4122f75a2a13ba7dfccb57b5434f46853f2d5"
+    },
+    {
+      "path": "public_html/assets/js/map.js",
+      "bytes": 2185,
+      "sha256": "9d942d03d09b27e9c95f5628ddfe13dd5cc960d77cc58e3e1fdeaef4b75485fb"
+    },
+    {
+      "path": "public_html/assets/js/site.js",
+      "bytes": 559,
+      "sha256": "d48e469e65bb5e868d87744486a30fb9bb1447ce44ef5ccf9b7452e0abfc0814"
+    },
+    {
+      "path": "public_html/calendar.html",
+      "bytes": 7881,
+      "sha256": "d3d80d769bc05febd69bf70738844c9f3b2c7028638cf5112890f84489e35d00"
+    },
+    {
+      "path": "public_html/community.html",
+      "bytes": 6355,
+      "sha256": "1fe764c725872f8041b7d89b2389255da51814f4a43d8b46e373a8057db3cb93"
+    },
+    {
+      "path": "public_html/contact.html",
+      "bytes": 5815,
+      "sha256": "873adb8f402dbd853d70269d5fc8c3f5dd8903fc21d91da8e648c9703138f7f0"
+    },
+    {
+      "path": "public_html/directory.html",
+      "bytes": 7778,
+      "sha256": "8a182976e657ef4b11168b518e9180cb7c126654299407f997d877b5c05558bf"
+    },
+    {
+      "path": "public_html/how-we-check.html",
+      "bytes": 4307,
+      "sha256": "04ac9689da5e4a19167674190b18111d6ef0eeb9fa89e58cef422ec2ce502a7d"
+    },
+    {
+      "path": "public_html/index.html",
+      "bytes": 12835,
+      "sha256": "046fee82fc899b6623668b6069ca0502b8952bbc8ecacc874582351ca27ba120"
+    },
+    {
+      "path": "public_html/list-your-business.html",
+      "bytes": 7669,
+      "sha256": "8a2eafef7b86e62c6d80841f1d74dee0f25131e4135010247a5ba2aac0db3132"
+    },
+    {
+      "path": "public_html/map.html",
+      "bytes": 6027,
+      "sha256": "293b563fd82189517a67ac4eaf15e781b8b5725c16b5d926bd8a609157372f15"
+    },
+    {
+      "path": "public_html/privacy.html",
+      "bytes": 5316,
+      "sha256": "670944637b2e351fe95380d2a6ce601b563c0003920bf79a066710704d3a36eb"
+    },
+    {
+      "path": "public_html/robots.txt",
+      "bytes": 68,
+      "sha256": "1e1e7ef2df828a942faf6bd7594f6933695a7cbbde02248b25b162b8a70e2225"
+    },
+    {
+      "path": "public_html/site.webmanifest",
+      "bytes": 423,
+      "sha256": "a122e0f71b2030c53dd7896e4af29bc68943c0ab07eaedec11c55e7b22894ef3"
+    },
+    {
+      "path": "public_html/sitemap.xml",
+      "bytes": 763,
+      "sha256": "0326f82e1ec7576f9062407aaf4d805cf635dfa038494218021f54261a429562"
+    },
+    {
+      "path": "public_html/terms.html",
+      "bytes": 5333,
+      "sha256": "944cc9adb1d79a335e4b614ceb5ce736ba209a864ee9817b59985533cc86c5d0"
+    },
+    {
+      "path": "public_html/travel.html",
+      "bytes": 6373,
+      "sha256": "cbebd0e449deab9bc2440b3ec4442bd6a8600362eb5d03a780b8f5b9017ce187"
+    },
+    {
+      "path": "published/brighton/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 823,
+      "sha256": "04351f50072bcd7ebd245bfe2e9acaa16cbdc79e58a790537c8f668c12cb0d23"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 132,
+      "sha256": "c72344ae824c0dc850a2f31cb335591c715f80d81a999de334c26799ab12f97e"
+    },
+    {
+      "path": "run.py",
+      "bytes": 91,
+      "sha256": "e2d6bfe06f51ffaed387672c91f3bb5ce7770823ad86c068768df8a3baf75dac"
+    },
+    {
+      "path": "scripts/build_public_html_zip.py",
+      "bytes": 368,
+      "sha256": "63647a6a22b936dea1e7b6b6c208739e0b575e890c620496f7e0568573faf604"
+    },
+    {
+      "path": "scripts/build_release_bundle.py",
+      "bytes": 703,
+      "sha256": "c39b9ae668b5f8fe74ef57cc2a86d44abc2c18b64d2aaa5cd76e957e3d765993"
+    },
+    {
+      "path": "scripts/generate_integrity_manifest.py",
+      "bytes": 830,
+      "sha256": "fbfaaf9bc5e81f089cafdf9cefd662f268802704f33075bc2979c16616a1b897"
+    },
+    {
+      "path": "scripts/promote_release.py",
+      "bytes": 819,
+      "sha256": "67dfeb8f2bdbe472cb3a6e9533044785232cfbb35437fd701e8410dcd48a2b63"
+    },
+    {
+      "path": "scripts/release_gate.py",
+      "bytes": 615,
+      "sha256": "e767ada0a2fc036bb89d158ebdde5f6da4fb5cacc258ee7d06f5d5779e0ecf7f"
+    },
+    {
+      "path": "scripts/run_offline_fixture.py",
+      "bytes": 114,
+      "sha256": "fb5333aa3553b257509315f96937f7a86bb1f71f7b4ac434a9f5e48e401a1b1a"
+    },
+    {
+      "path": "scripts/source_probe.py",
+      "bytes": 1724,
+      "sha256": "39b3aa83b9e2f87eadbacb071dff864d316e0a3e1d50e499ef21195eff8e04cc"
+    },
+    {
+      "path": "scripts/validate_outputs.py",
+      "bytes": 842,
+      "sha256": "c0f91d1e6256d8faaad702c1e7d459a8d94d2113505dfb12538b7b794002bb41"
+    },
+    {
+      "path": "scripts/validate_repo.py",
+      "bytes": 1590,
+      "sha256": "b14716f1403ed04a97d9e1733ebecee4896dd3a6c2d80be4ca9baba9d59fbeb0"
+    },
+    {
+      "path": "src/brightonlive/__init__.py",
+      "bytes": 22,
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 174,
+      "sha256": "10fda03497a3254dbfe43740d17d78abb9201bffac155dbdcfe1d2cd2a0bfdd2"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/cli.cpython-313.pyc",
+      "bytes": 2076,
+      "sha256": "c53d7b804efde86227c4f8279033410c52c533073b46fc45ae776e726c6cdb70"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/common.cpython-313.pyc",
+      "bytes": 3765,
+      "sha256": "a17fc28558b29f89ecdf2cc4f03e1f53ce4829dec2455ca971bb1f70991cb6b8"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/config.cpython-313.pyc",
+      "bytes": 1119,
+      "sha256": "fd5913614c05e7fc988d69b29a222ea9768269a55b9f80287c048d39a6c80377"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/coverage.cpython-313.pyc",
+      "bytes": 6181,
+      "sha256": "db8dd3f6b3d205c3035b7e0979557ccf6f7d57104dc6d5f8617ce226aabd6ea5"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/integrity.cpython-313.pyc",
+      "bytes": 1741,
+      "sha256": "19c4673d1394d266aebaffc8af050097cab931ca0efd812a86fa1f8879b1f4b6"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/pipeline.cpython-313.pyc",
+      "bytes": 5647,
+      "sha256": "3ffbd46b347c422e0e1fc4b0b94b76c6b4a901967754ce9ed8e82819932d4f76"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/privacy.cpython-313.pyc",
+      "bytes": 1695,
+      "sha256": "7d501fcdc69c7934181cbfee0de429f227284a05f4788c27398f6b9f15e2134b"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/provenance.cpython-313.pyc",
+      "bytes": 2439,
+      "sha256": "4571c21bd85b67b471152c8867fb4a719a864d39527089247543108ea3f66a40"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/validation.cpython-313.pyc",
+      "bytes": 4390,
+      "sha256": "ba9efa0fe5ab02b05d997c2bcc746765988b512fa594252c4953dc066d61edec"
+    },
+    {
+      "path": "src/brightonlive/__pycache__/verification.cpython-313.pyc",
+      "bytes": 3593,
+      "sha256": "2619109f02f7f2318860bd1203b7349197ebb2c46e831548ad3fe0491fbfc4b6"
+    },
+    {
+      "path": "src/brightonlive/cli.py",
+      "bytes": 1200,
+      "sha256": "2c14421cac7333dd039a248b0cec31515ec2283386a43d9ae24c93cff7b661be"
+    },
+    {
+      "path": "src/brightonlive/common.py",
+      "bytes": 1736,
+      "sha256": "b6e6319d25827e0dde95295f89ea80b3d2eda022ea4c6ed07c8360058b7f1c66"
+    },
+    {
+      "path": "src/brightonlive/config.py",
+      "bytes": 568,
+      "sha256": "80d9a548daf765aa04b14fd6e7bba0bc14de08fdf3002ca41b75819bb8edd14d"
+    },
+    {
+      "path": "src/brightonlive/coverage.py",
+      "bytes": 2872,
+      "sha256": "8c1b8ad5ca026da036c25278e5246b3f80d5044746017067585d147fbeb65178"
+    },
+    {
+      "path": "src/brightonlive/directory/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brightonlive/directory/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 158,
+      "sha256": "f75c077b63cdd158fe2ac303023b19d829c127d065bf217a376c44ffb090abcb"
+    },
+    {
+      "path": "src/brightonlive/directory/__pycache__/entity_resolution.cpython-313.pyc",
+      "bytes": 4142,
+      "sha256": "172fd3eb54d3121e2aa5097b3cf737ef9ecd655d01c020e75ebd003c90724275"
+    },
+    {
+      "path": "src/brightonlive/directory/__pycache__/exporters.cpython-313.pyc",
+      "bytes": 2587,
+      "sha256": "6cf5e41138403f6d700affae640ca7a12b12463daf9703b38738b2641f6c5cfe"
+    },
+    {
+      "path": "src/brightonlive/directory/__pycache__/pipeline.cpython-313.pyc",
+      "bytes": 1610,
+      "sha256": "65eeda13a038f7d09510f96cf11bd6a2a15f83a36ff5cf8d3cb5d666272f9f9b"
+    },
+    {
+      "path": "src/brightonlive/directory/entity_resolution.py",
+      "bytes": 2487,
+      "sha256": "c68a9d69c39f56963b860000a057da3fc2b6ec674310405f9603fac2a6fc9baf"
+    },
+    {
+      "path": "src/brightonlive/directory/exporters.py",
+      "bytes": 1487,
+      "sha256": "e968fcb0bdb1f8bdf2fa7d3ee7a7c6c10276ad2d9a8b94e8adbd2bf0dba12660"
+    },
+    {
+      "path": "src/brightonlive/directory/pipeline.py",
+      "bytes": 1099,
+      "sha256": "de2bda1dfa72e30265c6ea4dfb93efc3311751e2d8cce3b8c75367907630c43f"
+    },
+    {
+      "path": "src/brightonlive/events/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brightonlive/events/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 155,
+      "sha256": "2e22c70d337113b2c9fdf7de703874073610ac6718c18bae1cb162fdaa9eb690"
+    },
+    {
+      "path": "src/brightonlive/events/__pycache__/dedupe.cpython-313.pyc",
+      "bytes": 2305,
+      "sha256": "4dd2326f565709180ebac4bfaed15eb7df10b790e2973f216a41074a2bb3c24e"
+    },
+    {
+      "path": "src/brightonlive/events/__pycache__/exporters.cpython-313.pyc",
+      "bytes": 3614,
+      "sha256": "e4eb809e440704efbca2bf293452f87156c2c0e3fb931e0ca2c61cc842df9fad"
+    },
+    {
+      "path": "src/brightonlive/events/__pycache__/normalization.cpython-313.pyc",
+      "bytes": 1406,
+      "sha256": "02c191e8041d495be8633a6f7ee0ae908f909dc09d299c0bff42883dc2b9b32c"
+    },
+    {
+      "path": "src/brightonlive/events/__pycache__/pipeline.cpython-313.pyc",
+      "bytes": 1589,
+      "sha256": "187389c05a37adeb0ed45eb5790d6efb60947410b0921fd10f43aa9dbf3daa8c"
+    },
+    {
+      "path": "src/brightonlive/events/dedupe.py",
+      "bytes": 1335,
+      "sha256": "6ecdf8e4cf6d4990151f486adc3d7586d8a7650c8f88a5ccfade6bd6f588b0bf"
+    },
+    {
+      "path": "src/brightonlive/events/exporters.py",
+      "bytes": 1939,
+      "sha256": "cb34d4a602f0fb98b16b19db6dd6eed4dcc8ec3f86cfd211bc203798181400bf"
+    },
+    {
+      "path": "src/brightonlive/events/normalization.py",
+      "bytes": 667,
+      "sha256": "e8d3272c295db4b9c96cdc14505e5d354244dc098e2981671851593e9692605e"
+    },
+    {
+      "path": "src/brightonlive/events/pipeline.py",
+      "bytes": 1022,
+      "sha256": "d879be787f234354bb72bdf9f6306b6db0c641fc73d4035035eff4325334102d"
+    },
+    {
+      "path": "src/brightonlive/integrity.py",
+      "bytes": 793,
+      "sha256": "6c14302776212f79556b97371fe3fd154b6c5b9d2ae3518f93832e6a218a5541"
+    },
+    {
+      "path": "src/brightonlive/pipeline.py",
+      "bytes": 3586,
+      "sha256": "d3c18e48f79e13ca04aed80c2e67af9829daf5adc769a4ea5dbed1202a32379a"
+    },
+    {
+      "path": "src/brightonlive/privacy.py",
+      "bytes": 1051,
+      "sha256": "efec8efcf9375aa9594924713276d13ea89691c59313ef08ffb62e7f29e68dcb"
+    },
+    {
+      "path": "src/brightonlive/provenance.py",
+      "bytes": 937,
+      "sha256": "18354d954ae258e489dad9d4ec6af626c0794760a7cc2c0b4f09f44309d4cd2b"
+    },
+    {
+      "path": "src/brightonlive/sources/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brightonlive/sources/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 156,
+      "sha256": "cb59876b5cd7a808af57db39e3d86f792bd7250f83400160250cc98f0c57a601"
+    },
+    {
+      "path": "src/brightonlive/sources/__pycache__/base.cpython-313.pyc",
+      "bytes": 830,
+      "sha256": "c081f433795c23d63bfb71c7c70c0c97435450e8bc0624a4a886ca7634b7e097"
+    },
+    {
+      "path": "src/brightonlive/sources/__pycache__/companies_house.cpython-313.pyc",
+      "bytes": 3357,
+      "sha256": "ad705e9848c7d163f335746dabde2ceb3705566802d526c3bd60f2516ed5e052"
+    },
+    {
+      "path": "src/brightonlive/sources/__pycache__/fhrs.cpython-313.pyc",
+      "bytes": 3187,
+      "sha256": "c8957cf04322001a2b2bd4ad08644f01111755ffab9278ba7229583a97c8277d"
+    },
+    {
+      "path": "src/brightonlive/sources/__pycache__/jsonld.cpython-313.pyc",
+      "bytes": 7852,
+      "sha256": "6b1f9725c2e4575bb2cfabeb87b97958b60b61ea4cb26039f0497ddb70cd4142"
+    },
+    {
+      "path": "src/brightonlive/sources/__pycache__/manual.cpython-313.pyc",
+      "bytes": 4403,
+      "sha256": "d1e7b138980c77cb6af55381253a19e09f7c4256e1cd6a2564827ce4a78edd2d"
+    },
+    {
+      "path": "src/brightonlive/sources/__pycache__/osm.cpython-313.pyc",
+      "bytes": 4719,
+      "sha256": "08f1bacc95ef39957260aed03451bcc8bc7152f11d6301c22160947908b4654e"
+    },
+    {
+      "path": "src/brightonlive/sources/base.py",
+      "bytes": 293,
+      "sha256": "0e49fdf63d17c37bfe3849c950ce31830ad77f619403dd7147dcf735f2e8a6bb"
+    },
+    {
+      "path": "src/brightonlive/sources/companies_house.py",
+      "bytes": 2222,
+      "sha256": "a4dfec4a0dcb3f800594b4de8467d734bf3b56d1cd66ca9ed01364c0cae5a3de"
+    },
+    {
+      "path": "src/brightonlive/sources/fhrs.py",
+      "bytes": 1982,
+      "sha256": "4c6395b4dbe869d504804614b6c4fe04c292afa7eb01f0f13b44a32741b356cf"
+    },
+    {
+      "path": "src/brightonlive/sources/ics.py",
+      "bytes": 1957,
+      "sha256": "8286fa01a3fda880166e200e221efb4ef8109a05e7a2ff3d5b2a1be70d76247e"
+    },
+    {
+      "path": "src/brightonlive/sources/jsonld.py",
+      "bytes": 5359,
+      "sha256": "0163764536bf2423611bafb2a18daa8b2b7c4d0ffc5d16f39378f8f182f969dd"
+    },
+    {
+      "path": "src/brightonlive/sources/manual.py",
+      "bytes": 2778,
+      "sha256": "c5cb612aa7e2f99dbf80c29f83bc558f53d954c1cf5e13830d9c3c350dd313cd"
+    },
+    {
+      "path": "src/brightonlive/sources/osm.py",
+      "bytes": 2470,
+      "sha256": "4f69a2bce1f987646e4950fb2508edabc6716a4169be156e9c66b4de8eb5a624"
+    },
+    {
+      "path": "src/brightonlive/sources/registry_placeholder.py",
+      "bytes": 132,
+      "sha256": "f50de61f54b357b847016b135f5b1c268815b8c5d641b17560f0f2325bc9bf80"
+    },
+    {
+      "path": "src/brightonlive/sources/rss.py",
+      "bytes": 1552,
+      "sha256": "d2703b7f7c1022db350ce301cb76df6d0a3bd80aa73bb2ee182a98519d15a3f7"
+    },
+    {
+      "path": "src/brightonlive/taxonomy.py",
+      "bytes": 785,
+      "sha256": "3356a2c9a9ad50da5f9aed239b882f1c9c09282a48af4adfce589e140132d5d6"
+    },
+    {
+      "path": "src/brightonlive/validation.py",
+      "bytes": 2371,
+      "sha256": "6b9cada383786ac87156beb46f344e02dd21fc9017dd5d07a7e137eb78269000"
+    },
+    {
+      "path": "src/brightonlive/verification.py",
+      "bytes": 2430,
+      "sha256": "e9e483c20ed051d166db69a0b71ebe97a128097a89ee945102093596a852b5a6"
+    },
+    {
+      "path": "src/brightonlive/website/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brightonlive/website/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 156,
+      "sha256": "76a5d41ed5d8ba331642d178c8fe58abe0da718dd675e825b981753c308d308f"
+    },
+    {
+      "path": "src/brightonlive/website/__pycache__/builder.cpython-313.pyc",
+      "bytes": 1379,
+      "sha256": "7c043522ff7f55ac2c28ae44e3257f052c1e6b8180cce61a7294b47bace480e2"
+    },
+    {
+      "path": "src/brightonlive/website/builder.py",
+      "bytes": 954,
+      "sha256": "a6021f776e8b7d0a32a628c28c5fa0c6325f1e202fe4e0b9a0ab567618aafd99"
+    },
+    {
+      "path": "tests/__pycache__/test_common.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 3644,
+      "sha256": "fafcec62527276627bf94aee9e13460000c963dcee853b3c9a9cf890bfecf814"
+    },
+    {
+      "path": "tests/__pycache__/test_entity_resolution.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 4078,
+      "sha256": "11c7efe57b705e3ed96341e1ec41ca201e69d9bb53f6becfcc06d28c310db77e"
+    },
+    {
+      "path": "tests/__pycache__/test_event_dedupe.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 2671,
+      "sha256": "f935c33cdf8f57798bd6c8316f744cedc33d5c99f804be00635d907c78a866bb"
+    },
+    {
+      "path": "tests/__pycache__/test_integrity.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 3146,
+      "sha256": "b442bc9c87632e166e58a13e9bce890feb0808df9cbf2fb35989ee0ed38f03a1"
+    },
+    {
+      "path": "tests/__pycache__/test_offline_pipeline.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 3809,
+      "sha256": "329f2ef76de1e902d78732af91ad50f27301121b3a5f94528e63ee75e3d2eb20"
+    },
+    {
+      "path": "tests/__pycache__/test_privacy.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 1810,
+      "sha256": "0b4bab3be686938d080247d914c33cd8c8fbac4a97f5a6990aef84381216d0a1"
+    },
+    {
+      "path": "tests/__pycache__/test_site.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 4185,
+      "sha256": "bbb93d0436c1ce4309b5a37222f7f82a8f4e06a89b6db63c261401a790ba3c5c"
+    },
+    {
+      "path": "tests/__pycache__/test_validation.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 4911,
+      "sha256": "547f90215e025c1abb46556e1e0c465ecc78b307792ea56d96d9afeee3087c4f"
+    },
+    {
+      "path": "tests/__pycache__/test_verification.cpython-313-pytest-9.0.2.pyc",
+      "bytes": 3015,
+      "sha256": "cf2f08c9f68203e91ff36bf5da846ec74de489cfb93039c95f37a0fa0f5e8c18"
+    },
+    {
+      "path": "tests/test_common.py",
+      "bytes": 403,
+      "sha256": "87f1f7bdd039bd477f67fe17a979daecbb5dd3d2f211dbdc3369d59224f689c1"
+    },
+    {
+      "path": "tests/test_entity_resolution.py",
+      "bytes": 666,
+      "sha256": "dc694118466a669a67724d21520e4413c5482796c753d6901394445185aff40c"
+    },
+    {
+      "path": "tests/test_event_dedupe.py",
+      "bytes": 519,
+      "sha256": "4d62cec145033bab7573daf114e192d32ad0545d5a65565b84c4e07884b97396"
+    },
+    {
+      "path": "tests/test_integrity.py",
+      "bytes": 389,
+      "sha256": "d6641ac30be1425a535ac3233d18a9cf8b3d838566d06767bf41c39f17fcedb5"
+    },
+    {
+      "path": "tests/test_offline_pipeline.py",
+      "bytes": 907,
+      "sha256": "9b9520165f135f527b4523e262c079d93ab07b044399c52a176a2467dad3ac6e"
+    },
+    {
+      "path": "tests/test_privacy.py",
+      "bytes": 677,
+      "sha256": "c96184347978f48e23e4e704d1055ffd96882b19fb4a167dfc7657f925a802a0"
+    },
+    {
+      "path": "tests/test_site.py",
+      "bytes": 974,
+      "sha256": "7b67d89a2c29c428c93cb031d3c5aa8f230c6c094af327f6691b9842d65e1367"
+    },
+    {
+      "path": "tests/test_validation.py",
+      "bytes": 856,
+      "sha256": "919fc09e2e9e19357d5b5330c7dc96e227c8725a951825397fd0ad2a940a00f4"
+    },
+    {
+      "path": "tests/test_verification.py",
+      "bytes": 1044,
+      "sha256": "36ac015efec595d59612b644050db1cde9c3d84fceef3b671839f92e1f5e33f8"
+    }
+  ]
+}

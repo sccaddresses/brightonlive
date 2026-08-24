@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="BrightonLive">
+<rect width="256" height="256" rx="54" fill="#102833"/>
+<circle cx="128" cy="87" r="31" fill="#efbe50"/>
+<path d="M42 139c27-23 56-23 86 0s59 23 86 0" fill="none" stroke="#fff7e8" stroke-width="16" stroke-linecap="round"/>
+<path d="M50 181c24-17 49-17 75 0s52 17 79 0" fill="none" stroke="#49c9cb" stroke-width="13" stroke-linecap="round"/>
+<path d="M69 49h118" stroke="#ef6b61" stroke-width="9" stroke-linecap="round"/>
+</svg>

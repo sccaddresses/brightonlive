@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 180" role="img" aria-labelledby="t d">
+<title id="t">BrightonLive</title><desc id="d">BrightonLive wordmark with a wave and sun seal.</desc>
+<defs>
+ <linearGradient id="wave" x1="0" x2="1"><stop stop-color="#2fb8bd"/><stop offset="1" stop-color="#0d7f93"/></linearGradient>
+</defs>
+<g transform="translate(10 14)">
+ <circle cx="76" cy="76" r="68" fill="#102833"/>
+ <circle cx="76" cy="56" r="18" fill="#efbe50"/>
+ <path d="M22 88c16-14 34-14 52 0s36 14 54 0" fill="none" stroke="#fff7e8" stroke-width="9" stroke-linecap="round"/>
+ <path d="M28 111c14-10 29-10 45 0s31 10 47 0" fill="none" stroke="#49c9cb" stroke-width="7" stroke-linecap="round"/>
+ <path d="M42 34h68" stroke="#ef6b61" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+</g>
+<text x="170" y="112" font-family="Baskerville,Georgia,serif" font-size="82" font-weight="700" letter-spacing="-2.5" fill="#102833">BRIGHTON</text>
+<text x="720" y="112" font-family="Arial,Helvetica,sans-serif" font-size="62" font-weight="900" letter-spacing="2" fill="#ef6b61">LIVE</text>
+<path d="M174 137H944" stroke="#102833" stroke-width="2" opacity=".25"/>
+<text x="174" y="160" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="4.4" fill="#52666d">INDEPENDENT · LOCAL · USEFUL</text>
+</svg>

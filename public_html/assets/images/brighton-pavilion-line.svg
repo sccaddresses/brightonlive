@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-label="Brighton Royal Pavilion illustration">
+<rect width="1200" height="660" fill="#f2ede3"/>
+<g stroke="#182b32" stroke-width="4.5" fill="none" stroke-linejoin="round" stroke-linecap="round" opacity=".92">
+<path d="M90 550h1020"/>
+<path d="M180 550V420h85v-92h95v-82h96v-78h144v78h96v82h95v92h85v130"/>
+<path d="M255 328c20-58 53-86 102-100 48 14 81 42 102 100"/>
+<path d="M470 246c22-68 57-105 102-128 45 23 81 60 102 128"/>
+<path d="M742 328c20-58 53-86 102-100 48 14 81 42 102 100"/>
+<path d="M572 118V68m-11 20h22"/>
+<path d="M223 420h754M265 328h670M360 246h424"/>
+<path d="M225 550v-78h72v78m83 0V408h86v142m92 0V372h84v178m92 0V408h86v142m83 0v-78h72v78"/>
+<path d="M400 246c14-42 30-65 55-78 25 13 42 36 56 78M688 246c14-42 30-65 55-78 25 13 42 36 56 78"/>
+</g>
+<path d="M0 585c170-34 245 36 417 6s296-23 430 4 231 17 353-7v72H0z" fill="#49c9cb" opacity=".25"/>
+<circle cx="1030" cy="112" r="48" fill="#efbe50" opacity=".9"/>
+<path d="M930 162q24-22 48 0q24-22 48 0" fill="none" stroke="#182b32" stroke-width="5" stroke-linecap="round"/>
+</svg>

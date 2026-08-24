@@ -1,0 +1,52 @@
+{
+  "schema_version": "1",
+  "policy": "Real-place photography must have recorded origin/licence or explicit supplied permission. Generated BrightonLive brand artwork is recorded as project-created.",
+  "assets": [
+    {
+      "path": "assets/images/brighton-seafront-west-1600.webp",
+      "origin_title": "Brighton from the pier",
+      "creator": "Angerey",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brighton_from_the_pier.jpg",
+      "licence": "CC BY-SA 4.0",
+      "derived": true,
+      "sha256": "8d96c3558f3a9a8146c79cefbe2e8e8cc7e39320f17087b815b763fa08a4b8bb",
+      "bytes": 191698
+    },
+    {
+      "path": "assets/images/brighton-i360-seafront-1600.webp",
+      "origin_title": "Brighton seafront - view towards West Pier and i360",
+      "creator": "Ian Hawfinch",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brighton_seafront_-_view_towards_West_Pier_and_i360_-_geograph.org.uk_-_6765070.jpg",
+      "licence": "CC BY-SA 2.0",
+      "derived": true,
+      "sha256": "b5b41c66d5c1424b2d409487b7910685e1659c527d2e964311a388424c22edce",
+      "bytes": 184786
+    },
+    {
+      "path": "assets/images/brighton-royal-pavilion-1600.webp",
+      "origin_title": "Royal Pavilion 6.JPG",
+      "creator": "Poliphilo",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Royal_Pavilion_6.JPG",
+      "licence": "CC0 1.0",
+      "derived": true,
+      "sha256": "2c56c6bc0043e8bab044417733fcfa053d50c3cd7c5646905bd67729f453bf2e",
+      "bytes": 149708
+    },
+    {
+      "path": "assets/brand/header-1.png",
+      "creator": "BrightonLive project",
+      "licence": "project-created",
+      "derived": false,
+      "sha256": "02cac7f7b79cd4d0c8aeec0bf1146e7ae1e25df3e0ccb9ef88abe633398d472a",
+      "bytes": 13845
+    },
+    {
+      "path": "assets/brand/brightonlive-logo.svg",
+      "creator": "BrightonLive project",
+      "licence": "project-created",
+      "derived": false,
+      "sha256": "ffacff3bb36517ab2352c47c619dd4a44a67f5539ee649e3fedf1f52ca1cce6b",
+      "bytes": 1342
+    }
+  ]
+}

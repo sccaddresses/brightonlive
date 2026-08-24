@@ -1,0 +1,3 @@
+name,category,address,postcode,latitude,longitude,website,phone,email,address_public,phone_public,email_public,manual_verified,source_url,source_owner,notes
+BrightonLive Fixture Coffee,Cafés & Coffee,1 Test Street,Bn1 1aa,50.8225,-0.1372,https://example.invalid/fixture-coffee,01273000000,,true,true,false,true,https://example.invalid/source-fixture,BrightonLive Test Fixture,TEST ONLY - NEVER PRODUCTION
+BrightonLive Fixture Gallery,Culture & Venues,2 Test Street,BN1 1AB,50.8230,-0.1380,https://example.invalid/fixture-gallery,,,true,false,false,true,https://example.invalid/source-gallery,BrightonLive Test Fixture,TEST ONLY - NEVER PRODUCTION

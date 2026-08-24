@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://brightonlive.uk/sitemap.xml

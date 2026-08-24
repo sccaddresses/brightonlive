@@ -1,0 +1,8 @@
+PyYAML>=6.0
+requests>=2.32
+beautifulsoup4>=4.12
+feedparser>=6.0
+icalendar>=6.1
+rapidfuzz>=3.9
+jsonschema>=4.23
+python-dateutil>=2.9

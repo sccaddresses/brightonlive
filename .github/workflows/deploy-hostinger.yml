@@ -1,0 +1,72 @@
+name: Deploy BrightonLive to Hostinger
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: Type DEPLOY to confirm a public deployment
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: ${{ inputs.confirm == 'DEPLOY' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install and validate
+        run: |
+          pip install -e ".[dev]"
+          pytest
+          python scripts/validate_repo.py
+
+      - name: Require deployment secrets
+        env:
+          HOST: ${{ secrets.BRIGHTONLIVE_SSH_HOST }}
+          USER: ${{ secrets.BRIGHTONLIVE_SSH_USER }}
+          PASS: ${{ secrets.BRIGHTONLIVE_SSH_PASSWORD }}
+          REMOTE: ${{ secrets.BRIGHTONLIVE_REMOTE_PATH }}
+        run: |
+          test -n "$HOST"
+          test -n "$USER"
+          test -n "$PASS"
+          test -n "$REMOTE"
+
+      - name: Install sshpass
+        run: sudo apt-get update && sudo apt-get install -y sshpass rsync
+
+      - name: Trust Hostinger SSH host key
+        env:
+          HOST: ${{ secrets.BRIGHTONLIVE_SSH_HOST }}
+          PORT: ${{ secrets.BRIGHTONLIVE_SSH_PORT || '22' }}
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts
+
+      - name: Upload public_html
+        env:
+          SSHPASS: ${{ secrets.BRIGHTONLIVE_SSH_PASSWORD }}
+          HOST: ${{ secrets.BRIGHTONLIVE_SSH_HOST }}
+          PORT: ${{ secrets.BRIGHTONLIVE_SSH_PORT || '22' }}
+          USER: ${{ secrets.BRIGHTONLIVE_SSH_USER }}
+          REMOTE: ${{ secrets.BRIGHTONLIVE_REMOTE_PATH }}
+        run: |
+          sshpass -e rsync -avz --delete \
+            -e "ssh -p $PORT -o StrictHostKeyChecking=yes" \
+            public_html/ "$USER@$HOST:$REMOTE/"
+
+      - name: Smoke check
+        run: |
+          curl --fail --retry 3 --max-time 20 https://brightonlive.uk/
+          curl --fail --retry 3 --max-time 20 https://brightonlive.uk/map.html
+          curl --fail --retry 3 --max-time 20 https://brightonlive.uk/directory.html

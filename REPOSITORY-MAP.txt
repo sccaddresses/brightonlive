@@ -1,0 +1,82 @@
+BRIGHTONLIVE — COMPLETE REPOSITORY MAP
+=====================================
+
+Build date: 23 August 2026
+
+VALIDATION
+----------
+- Unit tests: 19 passed
+- Repository/public_html validation: PASS
+- Production browser feeds: empty by design (no test fixtures shipped)
+- SHA-256 repository integrity manifest: generated
+- Manifested files: 188
+
+PUBLIC SITE
+-----------
+HTML pages (12):
+- 404.html
+- calendar.html
+- community.html
+- contact.html
+- directory.html
+- how-we-check.html
+- index.html
+- list-your-business.html
+- map.html
+- privacy.html
+- terms.html
+- travel.html
+
+PYTHON ENGINE
+-------------
+Python source modules: 33
+- common provenance/integrity/privacy/validation/verification
+- directory entity resolution + public/internal/review exporters
+- events normalisation + deduplication + public/internal/review exporters
+- source adapters: manual, JSON-LD, FHRS, OSM Overpass, Companies House, RSS, ICS
+- source-registry placeholder contract for bounded future adapters
+- coverage / last-known-good release gate
+- website feed installation
+
+TESTS
+-----
+- tests/test_common.py
+- tests/test_entity_resolution.py
+- tests/test_event_dedupe.py
+- tests/test_integrity.py
+- tests/test_offline_pipeline.py
+- tests/test_privacy.py
+- tests/test_site.py
+- tests/test_validation.py
+- tests/test_verification.py
+
+GITHUB ACTIONS
+--------------
+- .github/workflows/ci.yml
+- .github/workflows/deploy-hostinger.yml
+- .github/workflows/production-readiness.yml
+- .github/workflows/weekly-data.yml
+
+TOP-LEVEL FILE COUNTS
+---------------------
+- (root): 15
+- .github: 6
+- .pytest_cache: 5
+- config: 4
+- data: 5
+- docs: 11
+- exports: 1
+- ops: 2
+- public_html: 51
+- published: 1
+- scripts: 9
+- src: 62
+- tests: 18
+
+IMPORTANT
+---------
+The repository contains synthetic fixture records only under data/fixtures/.
+They are used by CI/offline tests and are NOT present in the shipped public_html feeds.
+
+Upload the contents of the BrightonLive folder to the root of the new GitHub repository.
+See UPLOAD-TO-GITHUB.md.

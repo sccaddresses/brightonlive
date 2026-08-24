@@ -1,0 +1,57 @@
+{
+  "version": "1",
+  "records": [
+    {
+      "id": "BL-REF-ROYAL-PAVILION",
+      "name": "Royal Pavilion & Garden",
+      "category": "Landmark",
+      "latitude": 50.82232,
+      "longitude": -0.13752,
+      "source_url": "https://brightonmuseums.org.uk/visit/royal-pavilion-garden/",
+      "source_owner": "Brighton & Hove Museums",
+      "source_type": "primary_official",
+      "retrieved_at": "2026-08-23",
+      "integrity_sha256": "c5ad2afead9014f499afb0a3abaa3e7957e0a520f8a7382b9a2ece63edf9ec60",
+      "verification_status": "publication_ready"
+    },
+    {
+      "id": "BL-REF-PALACE-PIER",
+      "name": "Brighton Palace Pier",
+      "category": "Landmark",
+      "latitude": 50.81558,
+      "longitude": -0.13717,
+      "source_url": "https://www.brightonpier.co.uk/",
+      "source_owner": "Brighton Palace Pier",
+      "source_type": "primary_official",
+      "retrieved_at": "2026-08-23",
+      "integrity_sha256": "b4dd863f98eba3289835af24b099ee45e26bcd5dbe10d3d02d5221ef2df0c1e4",
+      "verification_status": "publication_ready"
+    },
+    {
+      "id": "BL-REF-BRIGHTON-STATION",
+      "name": "Brighton Station",
+      "category": "Travel",
+      "latitude": 50.82901,
+      "longitude": -0.1411,
+      "source_url": "https://www.nationalrail.co.uk/stations/brighton/",
+      "source_owner": "National Rail",
+      "source_type": "primary_official",
+      "retrieved_at": "2026-08-23",
+      "integrity_sha256": "4024886363c52e1024d03c1cccca6c6838f16afbf7a7ddb1ddf3a5cb6efc20bd",
+      "verification_status": "publication_ready"
+    },
+    {
+      "id": "BL-REF-BRIGHTON-DOME",
+      "name": "Brighton Dome",
+      "category": "Culture",
+      "latitude": 50.82318,
+      "longitude": -0.13892,
+      "source_url": "https://brightondome.org/",
+      "source_owner": "Brighton Dome",
+      "source_type": "primary_official",
+      "retrieved_at": "2026-08-23",
+      "integrity_sha256": "dcdd21234a496136b1396a0e64e89ca5129862f6473a4ff866168e77d5099d2d",
+      "verification_status": "publication_ready"
+    }
+  ]
+}

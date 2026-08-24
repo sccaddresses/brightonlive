@@ -1,0 +1,20 @@
+{
+  "name": "BrightonLive",
+  "short_name": "BrightonLive",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4efe5",
+  "theme_color": "#102833",
+  "icons": [
+    {
+      "src": "assets/brand/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/brand/google-business-logo-720.png",
+      "sizes": "720x720",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+name: BrightonLive Weekly Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      COMPANIES_HOUSE_API_KEY: ${{ secrets.COMPANIES_HOUSE_API_KEY }}
+      GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
+      GOOGLE_SEARCH_CX: ${{ secrets.GOOGLE_SEARCH_CX }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Tests first
+        run: pytest
+
+      - name: Probe configured sources
+        continue-on-error: true
+        run: python scripts/source_probe.py
+
+      - name: Live Brighton run
+        run: python run.py run --config config/brighton.yaml
+
+      - name: Validate output contracts
+        run: python scripts/validate_outputs.py --allow-empty
+
+      - name: Create release report
+        run: python scripts/release_gate.py
+
+      - name: Repository/site validation
+        run: python scripts/validate_repo.py
+
+      - name: Public build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: brightonlive-public-build
+          path: |
+            public_html/
+            exports/brighton/directory/public/
+            exports/brighton/events/public/
+            exports/brighton/release-report.json
+            exports/brighton/source-health.json
+
+      - name: Review queue artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: brightonlive-review
+          path: |
+            exports/brighton/directory/review/
+            exports/brighton/events/review/
+            exports/brighton/source-probes.json
+          if-no-files-found: warn
+
+      - name: Internal audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: brightonlive-internal-audit
+          path: |
+            exports/brighton/directory/internal/
+            exports/brighton/events/internal/
+            exports/brighton/source-health.json
+          if-no-files-found: error

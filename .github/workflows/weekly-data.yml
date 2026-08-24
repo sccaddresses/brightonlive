@@ -6,12 +6,12 @@ on:
     - cron: "17 5 * * 1"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   harvest:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     env:
       COMPANIES_HOUSE_API_KEY: ${{ secrets.COMPANIES_HOUSE_API_KEY }}
       GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
@@ -39,25 +39,38 @@ jobs:
       - name: Live Brighton run
         run: python run.py run --config config/brighton.yaml
 
-      - name: Validate output contracts
+      - name: Validate candidate output contracts
         run: python scripts/validate_outputs.py --allow-empty
 
       - name: Create release report
         run: python scripts/release_gate.py
 
+      - name: Determine release readiness
+        id: gate
+        shell: bash
+        run: |
+          READY=$(python - <<'PY'
+          import json
+          print(str(bool(json.load(open('exports/brighton/release-report.json'))['release_ready'])).lower())
+          PY
+          )
+          echo "ready=$READY" >> "$GITHUB_OUTPUT"
+          echo "release_ready=$READY"
+
       - name: Repository/site validation
         run: python scripts/validate_repo.py
 
-      - name: Public build artifact
+      - name: Public candidate artifact
         uses: actions/upload-artifact@v4
         with:
-          name: brightonlive-public-build
+          name: brightonlive-public-candidate
           path: |
-            public_html/
             exports/brighton/directory/public/
             exports/brighton/events/public/
             exports/brighton/release-report.json
             exports/brighton/source-health.json
+            exports/brighton/source-probes.json
+          if-no-files-found: error
 
       - name: Review queue artifact
         uses: actions/upload-artifact@v4
@@ -78,3 +91,22 @@ jobs:
             exports/brighton/events/internal/
             exports/brighton/source-health.json
           if-no-files-found: error
+
+      # Only a fully passing release may replace the last-known-good public feeds.
+      - name: Promote passed release into webroot
+        if: steps.gate.outputs.ready == 'true'
+        run: python scripts/promote_release.py
+
+      - name: Commit passed public feeds
+        if: steps.gate.outputs.ready == 'true'
+        shell: bash
+        run: |
+          git config user.name "brightonlive-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public_html/assets/data published/brighton
+          if git diff --cached --quiet; then
+            echo "No governed public-feed changes to commit."
+          else
+            git commit -m "Update governed BrightonLive public feeds"
+            git push origin HEAD:main
+          fi

@@ -1,0 +1,19 @@
+# Generic locality profile template.
+# BrightonLive is the proving deployment; this shape is intentionally postcode/radius-driven
+# so the engine can later be extracted into one reusable UK locality repository.
+project:
+  name: ExampleLive
+  slug: example
+  site_name: ExampleLive
+  site_url: https://example.invalid
+location:
+  name: Example town
+  country: GB
+  postcode: AA1 1AA
+  core_postcode_prefixes: [AA1]
+  latitude: 51.0
+  longitude: -0.1
+  radius_miles: 10
+  radius_km: 16.0934
+  public_radius_km: 9.0
+  timezone: Europe/London

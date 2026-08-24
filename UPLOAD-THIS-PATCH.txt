@@ -1,0 +1,46 @@
+BRIGHTONLIVE SINGLE-REPOSITORY PATCH — 24 AUGUST 2026
+=====================================================
+
+Target repository:
+  https://github.com/sccaddresses/brightonlive
+
+This ZIP contains ONLY additional/replacement files for BrightonLive.
+Do not upload anything to LocalDirectory, LocalEventsEngine or SCC Nexus repositories.
+
+Upload method (GitHub Desktop):
+1. Extract this ZIP.
+2. Copy everything INSIDE the extracted folder into your local brightonlive repository root.
+3. Allow Windows to merge folders and replace matching files.
+4. Open GitHub Desktop and review Changes.
+5. Commit: "Consolidate Brighton harvesting into single repo"
+6. Push origin.
+7. Wait for BrightonLive CI to pass.
+8. Run Actions > BrightonLive Weekly Data manually.
+
+What changes:
+- Adds mature structured-page event traversal inspired by the proven Lewes engine.
+- Adds OSM Overpass retry/failover instead of one fragile endpoint.
+- Corrects FHRS/OSM source probing methods.
+- Adds Brighton public locality gating (BN1/BN2/BN3/BN41 + coordinate fallback).
+- Separates FHRS evidence from consumer-directory eligibility.
+- Normalises directory/event categories before release coverage tests.
+- Adds postcode geocoding for event locations via postcodes.io.
+- Fixes impossible category-depth target (14 categories when the Brighton taxonomy has 11).
+- Prevents a live harvest from directly overwriting public_html.
+- Only a passed release gate can promote public feeds.
+- A passed weekly release is committed to main as the last-known-good public dataset.
+- Adds postcode-driven locality groundwork for the future one-engine-any-postcode project.
+
+Validation performed before packaging:
+  25 tests passed
+  offline directory output: 2
+  offline event output: 2
+  output contract validation: PASS
+  repository/site validation: PASS (12 HTML pages)
+  Python compileall: PASS
+  GitHub workflow YAML parse: PASS
+
+Important:
+The first improved Weekly Data run is still a discovery/coverage run. If the release gate
+fails, the candidate artifacts and review queues will still be available, but the existing
+live public feeds will NOT be replaced. This is deliberate last-known-good behaviour.

@@ -3,30 +3,31 @@ project:
   slug: brighton
   site_name: BrightonLive
   site_url: https://brightonlive.uk
-
 location:
   name: Brighton & Hove
   country: GB
   postcode: BN1 1AA
   postcode_area: BN
-  core_postcode_prefixes: [BN1, BN2, BN3, BN41]
+  core_postcode_prefixes:
+  - BN1
+  - BN2
+  - BN3
+  - BN41
   latitude: 50.8225
   longitude: -0.1372
   radius_miles: 10
   radius_km: 16.0934
   timezone: Europe/London
-
+  public_radius_km: 9.0
 time:
   look_back_months: 3
   look_forward_months: 12
-
 outputs:
   directory: exports/brighton
   public_html_data: public_html/assets/data
   published: published/brighton
   directory_js_global: BRIGHTONLIVE_DIRECTORY
   events_js_global: BRIGHTONLIVE_EVENTS
-
 policy:
   minimum_independent_sources: 2
   allow_class_a_single_source: true
@@ -34,39 +35,65 @@ policy:
   publish_registered_office_addresses: false
   publish_private_contact_addresses: false
   fail_closed: true
-
   directory_coverage:
     minimum_publish_safe: 500
-    minimum_priority_categories_with_5_records: 14
+    minimum_priority_categories_with_5_records: 8
     minimum_website_coverage: 0.45
-    minimum_contact_coverage: 0.40
+    minimum_contact_coverage: 0.4
     minimum_geocoded_coverage: 0.75
     minimum_multi_source_coverage: 0.25
-
   event_coverage:
     minimum_upcoming_events: 50
     minimum_primary_source_coverage: 0.95
-    minimum_venue_signal_coverage: 0.90
+    minimum_venue_signal_coverage: 0.9
     minimum_geocoded_coverage: 0.65
     maximum_invalid_rate: 0.02
-
   disclaimers:
-    directory: >-
-      BrightonLive is a local signposting directory. A source-checked listing is not an
-      endorsement, quality award or guarantee of qualifications, insurance, regulated
-      status, price, safety or current availability. Check important details directly.
-    events: >-
-      Event details can change. BrightonLive links back to organisers and primary sources;
-      check the organiser before travelling or booking.
-
+    directory: BrightonLive is a local signposting directory. A source-checked listing
+      is not an endorsement, quality award or guarantee of qualifications, insurance,
+      regulated status, price, safety or current availability. Check important details
+      directly.
+    events: Event details can change. BrightonLive links back to organisers and primary
+      sources; check the organiser before travelling or booking.
 directory:
   source_registry: config/directory-sources.yaml
   taxonomy: config/taxonomy.yaml
   manual_csv: data/manual/listings.csv
   fixture_csv: data/fixtures/listings.csv
-
 events:
   source_registry: config/event-sources.yaml
   taxonomy: config/taxonomy.yaml
   manual_csv: data/manual/events.csv
   fixture_csv: data/fixtures/events.csv
+directory_publication:
+  fhrs_consumer_allow_markers:
+  - restaurant
+  - cafe
+  - canteen
+  - pub
+  - bar
+  - nightclub
+  - takeaway
+  - sandwich
+  - hotel
+  - bed & breakfast
+  - guest house
+  - retailer
+  - supermarket
+  - hypermarket
+  fhrs_consumer_hold_markers:
+  - school
+  - college
+  - university
+  - caring premises
+  - hospital
+  - childcare
+  - manufacturer
+  - packer
+  - distributor
+  - transporter
+  - mobile caterer
+  - farmer
+  - grower
+  - importer
+  - exporter

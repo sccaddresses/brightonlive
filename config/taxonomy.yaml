@@ -1,0 +1,48 @@
+directory_categories:
+  - id: food_drink
+    name: Food & Drink
+    aliases: [restaurant, cafe, coffee, bakery, pub, bar, takeaway, brewery]
+  - id: shopping
+    name: Shopping
+    aliases: [shop, retail, vintage, market, boutique, books, gifts]
+  - id: culture
+    name: Culture & Venues
+    aliases: [museum, gallery, theatre, cinema, venue, attraction, music venue]
+  - id: family
+    name: Family
+    aliases: [children, kids, family, play, activity]
+  - id: wellbeing
+    name: Health & Wellbeing
+    aliases: [health, fitness, gym, yoga, beauty, hair, care]
+  - id: professional
+    name: Professional Services
+    aliases: [accountant, solicitor, legal, finance, consultant]
+  - id: trades
+    name: Trades & Home
+    aliases: [builder, plumber, electrician, carpenter, decorator, roofer, cleaning]
+  - id: accommodation
+    name: Accommodation
+    aliases: [hotel, hostel, guest house, bed and breakfast, b&b, self catering]
+  - id: community
+    name: Community
+    aliases: [charity, community group, club, association]
+  - id: amenities
+    name: Amenities
+    aliases: [toilet, parking, pharmacy, post office, bank, public service]
+  - id: transport
+    name: Transport
+    aliases: [station, bus, taxi, cycle, parking, travel]
+
+event_categories:
+  - {id: music, name: Music, aliases: [gig, concert, live music, dj]}
+  - {id: comedy, name: Comedy, aliases: [stand up, stand-up, comedian]}
+  - {id: arts, name: Arts, aliases: [art, exhibition, gallery, creative, theatre, dance]}
+  - {id: family, name: Family, aliases: [children, kids, family friendly]}
+  - {id: food, name: Food & Drink, aliases: [food, supper, tasting, drink]}
+  - {id: markets, name: Markets, aliases: [market, fair, makers market]}
+  - {id: talks, name: Talks, aliases: [talk, lecture, conversation, debate]}
+  - {id: community, name: Community, aliases: [community, fundraiser, meeting]}
+  - {id: sport, name: Sport, aliases: [sports, fitness, run, walk, match]}
+  - {id: film, name: Film, aliases: [cinema, screening, movie]}
+  - {id: nightlife, name: Nightlife, aliases: [club, clubnight, party]}
+  - {id: business, name: Business, aliases: [networking, workshop, training]}

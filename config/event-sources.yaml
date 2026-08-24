@@ -1,0 +1,111 @@
+suppliers:
+  - key: visitbrighton
+    name: VisitBrighton Events Calendar
+    kind: destination_site
+    priority: 10
+    source_class: official_destination
+    enabled: true
+    urls:
+      website: https://www.visitbrighton.com/
+      events: https://www.visitbrighton.com/whats-on/events-calendar
+    strategy: [structured_pages, json_ld, manual_review]
+    categories: [Music, Comedy, Arts, Family, Food & Drink, Markets, Talks, Community, Sport]
+
+  - key: brighton_dome
+    name: Brighton Dome
+    kind: cultural_venue
+    priority: 10
+    source_class: first_party
+    enabled: true
+    urls:
+      website: https://brightondome.org/
+      events: https://brightondome.org/whats-on/
+    strategy: [structured_pages, json_ld, manual_review]
+    default_venue: Brighton Dome
+    default_postcode: BN1 1UE
+
+  - key: brighton_centre
+    name: Brighton Centre
+    kind: arena
+    priority: 10
+    source_class: first_party
+    enabled: true
+    urls:
+      website: https://brightoncentre.co.uk/
+      events: https://brightoncentre.co.uk/
+    strategy: [structured_pages, json_ld, manual_review]
+    default_venue: Brighton Centre
+    default_postcode: BN1 2GR
+
+  - key: komedia
+    name: Komedia Brighton
+    kind: venue
+    priority: 12
+    source_class: first_party
+    enabled: true
+    urls:
+      website: https://www.komedia.co.uk/
+      events: https://www.komedia.co.uk/
+    strategy: [structured_pages, json_ld, manual_review]
+    default_venue: Komedia Brighton
+
+  - key: old_market
+    name: The Old Market
+    kind: venue
+    priority: 12
+    source_class: first_party
+    enabled: true
+    urls:
+      website: https://www.theoldmarket.com/
+      events: https://www.theoldmarket.com/shows
+    strategy: [structured_pages, json_ld, ics_discovery, manual_review]
+    default_venue: The Old Market
+
+  - key: theatre_royal
+    name: Theatre Royal Brighton
+    kind: theatre
+    priority: 14
+    source_class: first_party_ticketing
+    enabled: true
+    urls:
+      events: https://www.atgtickets.com/venues/theatre-royal-brighton/
+    strategy: [structured_pages, json_ld, manual_review]
+    default_venue: Theatre Royal Brighton
+
+  - key: brighton_fringe
+    name: Brighton Fringe
+    kind: festival
+    priority: 10
+    source_class: first_party
+    enabled: true
+    urls:
+      website: https://www.brightonfringe.org/
+    strategy: [website_discovery, programme, manual_review]
+    categories: [Comedy, Arts, Music, Family, Talks, Community]
+
+  - key: brighton_festival
+    name: Brighton Festival
+    kind: festival
+    priority: 10
+    source_class: first_party
+    enabled: true
+    urls:
+      website: https://brightonfestival.org/
+    strategy: [website_discovery, programme, manual_review]
+    categories: [Arts, Music, Family, Talks]
+
+  - key: council_events
+    name: Brighton & Hove City Council events
+    kind: council
+    priority: 18
+    source_class: public_authority
+    enabled: true
+    urls:
+      website: https://www.brighton-hove.gov.uk/
+      events: https://www.brighton-hove.gov.uk/events
+    strategy: [structured_pages, manual_review]
+    categories: [Community, Family, Talks, Sport]
+
+manual:
+  enabled: true
+  file: data/manual/events.csv

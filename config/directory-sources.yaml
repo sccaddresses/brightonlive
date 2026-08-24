@@ -1,0 +1,70 @@
+sources:
+  - key: manual
+    name: Manual / business-supplied records
+    adapter: manual_directory
+    enabled: true
+    source_class: human_review
+    publication_role: verification
+    notes: Explicit reviewed corrections, submissions and business-supplied facts.
+
+  - key: fhrs
+    name: Food Standards Agency FHRS
+    adapter: fhrs
+    enabled: true
+    source_class: authoritative_class_a
+    publication_role: identity_location_corroboration
+    endpoint: https://api.ratings.food.gov.uk/Establishments
+    notes: Food establishment identity/location source. Does not imply a BrightonLive recommendation.
+
+  - key: osm
+    name: OpenStreetMap Overpass
+    adapter: osm_overpass
+    enabled: true
+    source_class: community_open_data
+    publication_role: discovery
+    endpoint: https://overpass-api.de/api/interpreter
+    notes: Broad place/service discovery. Normally requires corroboration.
+
+  - key: companies_house
+    name: Companies House
+    adapter: companies_house
+    enabled: true
+    source_class: authoritative_corporate
+    publication_role: corporate_identity_only
+    credential: COMPANIES_HOUSE_API_KEY
+    notes: Registered office is never assumed to be a public trading location.
+
+  - key: json_ld
+    name: Organisation-owned structured data
+    adapter: json_ld_directory
+    enabled: true
+    source_class: owned_primary
+    publication_role: operational_identity
+    websites: []
+    notes: Organisation-owned schema.org data can verify public operational fields.
+
+  - key: cqc
+    name: Care Quality Commission
+    adapter: registry_placeholder
+    enabled: false
+    source_class: authoritative_class_a
+    publication_role: regulated_location
+    index_url: https://www.cqc.org.uk/about-us/transparency/using-cqc-data
+    notes: Disabled until the current downloadable directory contract is probed in this repo.
+
+  - key: charity_commission
+    name: Charity Commission
+    adapter: registry_placeholder
+    enabled: false
+    source_class: authoritative_class_a
+    publication_role: registered_identity
+    index_url: https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download
+    notes: Registered contact address is not assumed to be a visitor/service location.
+
+discovery_pages:
+  - name: Brighton & Hove City Council
+    url: https://www.brighton-hove.gov.uk/
+    review_required: true
+  - name: VisitBrighton
+    url: https://www.visitbrighton.com/
+    review_required: true

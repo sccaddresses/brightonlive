@@ -41,7 +41,7 @@ jobs:
         run: python scripts/generate_integrity_manifest.py
 
       - name: Upload offline audit
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: brightonlive-offline-ci
           path: |

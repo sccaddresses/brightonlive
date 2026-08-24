@@ -61,7 +61,7 @@ jobs:
         run: python scripts/validate_repo.py
 
       - name: Public candidate artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: brightonlive-public-candidate
           path: |
@@ -73,7 +73,7 @@ jobs:
           if-no-files-found: error
 
       - name: Review queue artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: brightonlive-review
           path: |
@@ -83,7 +83,7 @@ jobs:
           if-no-files-found: warn
 
       - name: Internal audit artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: brightonlive-internal-audit
           path: |
